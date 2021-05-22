@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Campanas</title>
+   <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  </head>
+  <body onload="iniciar();">
+ 
+<main class="game">
+  <input type="button" value="Bienvenido a las campanas. Escucha los sonidos y da clic para repetir en el orden que sonaron" id="btnIntrucciones" name="">
+  <img src="img/bocina.png" id="bocina" onclick="leeinstrucciones()">
+  <div class="heading js-heading">
+    
+  </div>
+
+  <section class="tile-container js-container click ">
+    <div class="tile tile-rojo" data-tile="rojo"></div>
+    <div class="tile tile-verde" data-tile="verde"></div>
+    <div class="tile tile-azul" data-tile="azul"></div>
+    <div class="tile tile-amarillo" data-tile="amarillo"></div>
+    <div class="tile tile-morado" data-tile="morado"></div>
+  </section>
+
+  
+    <button class="empezar iniciar" id="inicio">Comenzar a Jugar</button>
+
+    <span class="info js-info hidden"></span>
+
+</main>
+
+<div class="hidden">
+  <audio src="audio/nota1.mp3" data-sound="rojo"></audio>
+  <audio src="audio/nota2.mp3" data-sound="verde"></audio>
+  <audio src="audio/nota3.mp3" data-sound="azul"></audio>
+  <audio src="audio/nota4.mp3" data-sound="amarillo"></audio>
+  <audio src="audio/nota5.mp3" data-sound="morado"></audio>
+</div>
+
+
+
+
+
+ 
+    <script src="js/jscampanas.js"></script>
+
+  </body>
+</html>
